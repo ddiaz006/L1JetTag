@@ -5,8 +5,6 @@ import numpy as np
 import ROOT as r
 import tqdm
 
-#inFileName = "root://cmseos.fnal.gov///store/user/mequinna/file4russell_2.root"
-
 SIGNAL_PDG_ID = 1000006
 MAX_ETA = 2.3
 N_JET_MAX = 12
@@ -18,11 +16,6 @@ r.gROOT.SetBatch(1)
 
 
 def main(args):
-    #tag = "QCD"
-    #ptCut = 200
-    #trainPercent = 50
-    #usePuppi = 0
-
     inFileName = args.inFileName
     print("Reading from " + inFileName)
 
